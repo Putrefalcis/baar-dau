@@ -1,0 +1,20 @@
+Allow sched_getparam in the process sandbox.
+
+glibc's pthread_getschedparam() issues both sched_getscheduler and
+sched_getparam; the allowlist only covered the former, so the Compositor
+process dies with "Sandbox violation: disallowed syscall (143)" on
+kernels/userlands that exercise this path (observed on linux-cachyos).
+
+--- a/Libraries/LibSandbox/Seccomp.cpp
++++ b/Libraries/LibSandbox/Seccomp.cpp
+@@ -1226,6 +1226,10 @@
+     append(BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, __NR_sched_getscheduler, 0, 1));
+     append(SECCOMP_ALLOW);
+ #endif
++#ifdef __NR_sched_getparam
++    append(BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, __NR_sched_getparam, 0, 1));
++    append(SECCOMP_ALLOW);
++#endif
+ #ifdef __NR_sched_get_priority_max
+     append(BPF_JUMP(BPF_JMP | BPF_JEQ | BPF_K, __NR_sched_get_priority_max, 0, 1));
+     append(SECCOMP_ALLOW);

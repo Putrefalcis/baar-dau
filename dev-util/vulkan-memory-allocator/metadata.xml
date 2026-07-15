@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription>
+		AMD's Vulkan Memory Allocator, a header-only helper library for
+		Vulkan memory management. Installs vk_mem_alloc.h and the CMake
+		config that consumers locate with find_package(VulkanMemoryAllocator).
+	</longdescription>
+	<upstream>
+		<remote-id type="github">GPUOpen-LibrariesAndSDKs/VulkanMemoryAllocator</remote-id>
+	</upstream>
+</pkgmetadata>

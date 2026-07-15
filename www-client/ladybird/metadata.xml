@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription>
+		Ladybird is a truly independent web browser built on the LibWeb and
+		LibJS engines from the SerenityOS project. Upstream has no releases
+		yet and only supports building through vcpkg; this snapshot ebuild
+		builds a pinned master commit entirely against system libraries,
+		with no network access during the build. WebGL runs on Mesa via a
+		small ANGLE compatibility shim (files/angle-shim.c).
+	</longdescription>
+	<upstream>
+		<remote-id type="github">LadybirdBrowser/ladybird</remote-id>
+	</upstream>
+</pkgmetadata>

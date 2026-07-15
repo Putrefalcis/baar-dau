@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription>
+		meshoptimizer provides algorithms that help optimize meshes for GPU
+		vertex/index processing and reduce mesh size. Used by Blender for
+		glTF import/export compression (new optional dependency in
+		Blender 5.2).
+	</longdescription>
+	<upstream>
+		<remote-id type="github">zeux/meshoptimizer</remote-id>
+	</upstream>
+</pkgmetadata>

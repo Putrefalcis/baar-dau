@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription>
+		Wuffs (Wrangling Untrusted File Formats Safely) is a memory-safe
+		single-file C library from Google. Installed as a header-style
+		source file under /usr/include/wuffs, which is how consumers such
+		as Ladybird's GIF decoder use it.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">google/wuffs</remote-id>
+	</upstream>
+</pkgmetadata>

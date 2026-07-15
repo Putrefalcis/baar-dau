@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE pkgmetadata SYSTEM "https://www.gentoo.org/dtd/metadata.dtd">
+<pkgmetadata>
+	<!-- maintainer-needed -->
+	<longdescription>
+		Skia is Google's 2D graphics library. Packaged from the tip of the
+		upstream chrome/m148 release branch because Ladybird's build checks
+		for that exact milestone (PV must always equal the milestone number,
+		which is exported through skia.pc). Built with GN against system
+		libraries, as a shared library, with the SkPath edit methods that the
+		vcpkg port re-enables and skcms symbols exported.
+	</longdescription>
+	<upstream>
+		<remote-id type="github">google/skia</remote-id>
+	</upstream>
+</pkgmetadata>

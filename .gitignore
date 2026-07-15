@@ -1,0 +1,12 @@
+# Portage regenerates metadata locally on sync; committing it risks staleness.
+/metadata/md5-cache/
+/metadata/pkg-desc-index
+/metadata/timestamp*
+/metadata/dtd/
+/metadata/glsa/
+/metadata/news/
+
+# Editor / OS cruft
+*~
+*.swp
+.DS_Store
