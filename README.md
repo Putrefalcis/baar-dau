@@ -55,8 +55,8 @@ row.
 With `app-eselect/eselect-repository` (recommended):
 
 ```sh
-eselect repository add baar-dau git https://github.com/Putrefalcis/baar-dau.git
-emerge --sync baar-dau
+sudo eselect repository enable baar-dau
+sudo emerge --sync baar-dau
 ```
 
 Or manually, by creating `/etc/portage/repos.conf/baar-dau.conf`:
@@ -69,7 +69,7 @@ sync-uri = https://github.com/Putrefalcis/baar-dau.git
 auto-sync = yes
 ```
 
-then `emerge --sync baar-dau`.
+then `sudo emerge --sync baar-dau`.
 
 ## Keywords / unmasking
 
