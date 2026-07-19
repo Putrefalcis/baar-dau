@@ -119,7 +119,7 @@ RDEPEND="${PYTHON_DEPS}
 	media-libs/meshoptimizer:=
 	>=media-libs/opencolorio-2.5.0:=
 	>=media-libs/openexr-3.3.5:0=
-	>=media-libs/openimageio-3.0.9.1:=[python,${PYTHON_SINGLE_USEDEP}]
+	>=media-libs/openimageio-3.0.9.1:=
 	sci-libs/ceres-solver:=
 	virtual/glu
 	virtual/libintl
@@ -209,7 +209,7 @@ DEPEND="${RDEPEND}
 	>=dev-cpp/eigen-5.0.0:=
 	test? (
 		$(python_gen_cond_dep '
-			media-libs/openimageio[jpeg2k,tools]
+			media-libs/openimageio[jpeg2k,python,${PYTHON_SINGLE_USEDEP},tools]
 		')
 	)
 "
